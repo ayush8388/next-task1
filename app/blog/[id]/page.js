@@ -4,7 +4,7 @@ import posts from '../../../data/posts.json'
 import { useParams } from 'next/navigation';
 
 
-const page = () => {
+const Page = () => {
     const params = useParams();
     const post = posts.find((p) => String(p.id) === params.id);
   if (!post) {
@@ -21,4 +21,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
